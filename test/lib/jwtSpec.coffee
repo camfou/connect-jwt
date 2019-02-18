@@ -444,7 +444,7 @@ describe 'JWT', ->
   describe 'supported algorithms', ->
 
     it 'should be enumerated', ->
-      JWT.algorithms.should.be.an.array
+      JWT.algorithms.should.be.an('array')
 
 
 
