@@ -2,20 +2,17 @@
   "name": "anvil-connect-jwt",
   "version": "0.1.8",
   "description": "Anvil Connect JWT library for Node.js",
-  "author": {
-    "name": "Christian Smith",
-    "email": "smith@anvil.io",
-    "url": "http://anvil.io"
-  },
   "main": "index.js",
   "scripts": {
-    "test": "mocha test && eslint . && echo Code looks good!",
+    "test": "mocha && eslint . && echo Code looks good!",
     "lint": "eslint . && echo Code looks good!",
-    "test-watch": "mocha test --watch"
+    "test-watch": "mocha test --watch",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anvilresearch/connect-jwt.git"
+    "url": "https://github.com/camfou/connect-jwt.git"
   },
   "keywords": [
     "JWT",
@@ -28,24 +25,30 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anvilresearch/connect-jwt/issues"
+    "url": "https://github.com/camfou/connect-jwt/issues"
   },
-  "homepage": "https://github.com/anvilresearch/connect-jwt",
+  "homepage": "https://github.com/camfou/connect-jwt",
   "devDependencies": {
-    "chai": "^3.0.0",
-    "coffee-script": "^1.9.3",
-    "eslint": "^1.5.1",
-    "eslint-config-standard": "^4.4.0",
-    "eslint-plugin-standard": "^1.3.1",
-    "mocha": "^2.2.5",
-    "sinon": "^1.14.1",
-    "sinon-chai": "^2.8.0"
+    "chai": "^4.2.0",
+    "coffeescript": "^2.3.2",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.15.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "sinon": "^7.2.7",
+    "sinon-chai": "^3.3.0"
   },
   "dependencies": {
-    "lodash": "^3.10.1",
-    "base64url": "^1.0.4",
-    "jsrsasign": "^5.0.0",
-    "jwa": "^1.0.0",
-    "valid-url": "^1.0.9"
+    "lodash": "4.17.11",
+    "base64url": "3.0.1",
+    "jsrsasign": "8.0.12",
+    "jwa": "1.4.1",
+    "valid-url": "1.0.9"
   }
 }
