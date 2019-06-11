@@ -7,14 +7,14 @@
 
 ## Install
 
-    $ npm install anvil-connect-jwt --save
+    $ npm install camfou-connect-jwt --save
 
 ## Usage
 
 All JWTs must conform to the JWT/JWS/JWE/JW\* specifications, but applications may impose additional requirements. For example, an OpenID Connect ID Token must require certain claims and headers, restrict the use of others, set default values, etc. Anvil Connect JWT is an abstract class that can be used to define JWTs conforming to application specfic requirements.
 
     // require the package
-    var JWT = require('anvil-connect-jwt');
+    var JWT = require('camfou-connect-jwt');
 
 
     // define a subclass
