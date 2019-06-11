@@ -4,8 +4,8 @@
   "description": "Fork of Anvil Connect JWT library for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && eslint . && echo Code looks good!",
-    "lint": "eslint . && echo Code looks good!",
+    "test": "mocha && npm run lint",
+    "lint": "eslint -c .eslintrc lib/** && echo Code looks good!",
     "test-watch": "mocha test --watch",
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
@@ -30,18 +30,18 @@
   "homepage": "https://github.com/camfou/connect-jwt",
   "devDependencies": {
     "chai": "^4.2.0",
-    "coffeescript": "^2.3.2",
-    "coveralls": "^3.0.3",
-    "eslint": "^5.15.2",
+    "coffeescript": "^2.4.1",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^6.0.2",
+    "mocha": "^6.1.4",
     "mocha-lcov-reporter": "^1.3.0",
-    "sinon": "^7.2.7",
+    "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0"
   },
   "dependencies": {
