@@ -1,7 +1,7 @@
 {
-  "name": "@camfou/anvil-connect-jwt",
-  "version": "0.2.1",
-  "description": "Anvil Connect JWT library for Node.js",
+  "name": "camfou-connect-jwt",
+  "version": "0.2.2",
+  "description": "Fork of Anvil Connect JWT library for Node.js",
   "main": "index.js",
   "scripts": {
     "test": "mocha && eslint . && echo Code looks good!",
