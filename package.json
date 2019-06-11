@@ -1,6 +1,6 @@
 {
-  "name": "anvil-connect-jwt",
-  "version": "0.2.0",
+  "name": "@camfou/anvil-connect-jwt",
+  "version": "0.2.1",
   "description": "Anvil Connect JWT library for Node.js",
   "main": "index.js",
   "scripts": {
