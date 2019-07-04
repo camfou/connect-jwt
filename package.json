@@ -8,7 +8,9 @@
     "lint": "eslint -c .eslintrc lib/** && echo Code looks good!",
     "test-watch": "mocha test --watch",
     "cover": "istanbul cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -49,6 +51,8 @@
     "base64url": "3.0.1",
     "jsrsasign": "8.0.12",
     "jwa": "1.4.1",
-    "valid-url": "1.0.9"
-  }
+    "valid-url": "1.0.9",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
