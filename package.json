@@ -1,6 +1,6 @@
 {
   "name": "camfou-connect-jwt",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Fork of Anvil Connect JWT library for Node.js",
   "main": "index.js",
   "scripts": {
