@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "base64url": "3.0.1",
-    "jsrsasign": "8.0.24",
+    "jsrsasign": "10.3.0",
     "jwa": "2.0.0",
     "lodash": "^4.17.20",
     "valid-url": "1.0.9"
